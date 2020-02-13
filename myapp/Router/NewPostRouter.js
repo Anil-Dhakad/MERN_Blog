@@ -25,11 +25,11 @@ module.exports = function(app) {
     // db.s(res);
   });
 
-  app.post("/ShowYourPost", function(res, req) {
+  app.post("/ShowYourPost", function(req, res) {
     // res.header("Access-Control-Allow-Credentials", true);
 
     console.log("aaa");
-    // console.log("Get session value: ", req.session.userid);
+    console.log("Get session values..: ", req.session.userid);
     var abc = "anil";
     db.syp(abc, res);
   });
